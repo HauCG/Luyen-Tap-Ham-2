@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+<input type="text" id="arr" placeholder="Nhập vào dãy số, cách nhau bởi dấu phẩy">
+<input type="button" value="Đảo mảng" onclick="reverseArray()">
+<script>
+    function reverseArray() {
+        let arr = document.getElementById('arr').value.split(',').map(Number);
+        let i = 0;
+        while (i < arr.length / 2) {
+            let temp = arr[i];
+            arr[i] = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = temp;
+            i++;
+        }
+        alert(arr)
+    }
+</script>
+</body>
+</html>

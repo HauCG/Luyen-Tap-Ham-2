@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so" placeholder="Nhap So">
+<input type="button" value="Kiem Tra" onclick="Kiemtra()">
+<p id="result" ></p>
+<script>
+    function Kiemtra() {
+        let n = parseInt(document.getElementById("so").value);
+        if (isNaN(n)){
+        document.getElementById("result").innerText = "KO PHAI SO NHAP LAI";
+        }else {
+        document.getElementById("result").innerText = "La So"
+        }
+    }
+
+</script>
+</body>
+</html>

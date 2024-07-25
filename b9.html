@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Day cho truoc [1,2,4,6,7,9]</h3>
+<input type="text" id="kt" placeholder="Nhap so can kiem tra">
+<input type="button" value="Kiem t1ra xem co trong day khong ?" onclick="kiemtra()">
+<script>
+    function kiemtra() {
+        let n = parseInt(document.getElementById("kt").value);
+        let arr = [1, 2, 4, 6, 7, 9];
+        let dem = 0;
+        for (let i = 0; i < arr.length; i++ ) {
+            if (arr[i] === n) {
+            dem++;
+            }
+        }
+        if (dem >= 1) {
+            alert("xuat hien" + dem + " lan");
+        } else {
+            alert("So ko co trong day");
+        }
+    }
+</script>
+</body>
+</html>
+
+

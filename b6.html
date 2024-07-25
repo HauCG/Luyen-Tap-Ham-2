@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so" placeholder="Nhap so ">
+<input type="button" value="Kiem Tra" onclick="kiemtra()">
+<script>
+    function kiemtra() {
+        let n = parseInt(document.getElementById("so").value);
+        if ( n > 0 ){
+            alert("So nay so nguyen duong");
+        }
+        else {
+            alert("So nay ko phai so nguyen duong")
+        }
+    }
+</script>
+</body>
+</html>

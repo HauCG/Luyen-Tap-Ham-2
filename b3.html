@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tinh Giai Thua</h3>
+<input type="number" id="so" placeholder="Nhap So">
+<input type="button" value="Tinh giai thua" onclick="tinhgiaithua()">
+<p id="result" > </p>
+<script>
+function tinhgiaithua() {
+    let n = parseInt(document.getElementById("so").value);
+    let result = 1;
+    let i = 1;
+    while (i <= n) {
+        result *= i;
+        i++;
+    }
+    document.getElementById('result').innerText = `${result}`;
+}
+</script>
+</body>
+</html>
+
+

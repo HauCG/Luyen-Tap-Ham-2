@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dientichchuvi</title>
+</head>
+<body>
+<input type="text" id="dai" placeholder="Canh Dai">
+<input type="text" id="rong" placeholder="Canh Ngan">
+<input type="button" value="Tinh Chu Vi" onclick="chuvi()">
+<input type="button" value="Tinh Dien Tich" onclick="dientich()">
+<p id="resultcv" </p>
+<br>
+<p id="resultdt" </p>
+<script>
+
+    function chuvi() {
+        let d = document.getElementById('dai').value;
+        let r = document.getElementById('rong').value;
+        let resultcv = r * 2 + d * 2;
+        document.getElementById('resultcv').innerText=resultcv
+    }
+    function dientich() {
+        let d = document.getElementById('dai').value;
+        let r = document.getElementById('rong').value;
+        let resultdt = r * d;
+        document.getElementById('resultdt').innerText=resultdt
+    }
+</script>
+</body>
+</html>

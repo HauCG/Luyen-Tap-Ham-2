@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="3so" placeholder="Nhap 3 so cach nhau boi dau , ">
+<input type="button" value="Tim Gia Tri Nho Nhat" onclick="timmin()">
+<p id="result" ></p>
+<script>
+    function timmin() {
+         let arr = document.getElementById("3so").value.split(',').map(Number);
+         if (arr[0] > arr[1] && arr[0] > arr[2] ){
+         document.getElementById('result').innerText = "So dau tien la so to nhat";
+         }
+         else if  (arr[1] > arr[2] && arr[1] > arr[0] ){
+             document.getElementById('result').innerText = "So thu 2 la so to nhat";
+         }
+         else {
+             document.getElementById('result').innerText = "So thu 3 la so to nhat";
+         }
+
+    }
+</script>
+</body>
+</html>
+

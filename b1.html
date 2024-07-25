@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so" placeholder="Nhap so vao">
+<input type="button" value="Tinh Binh Phuong" onclick="binhphuong()">
+<p id="result"></p>
+<script>
+    function binhphuong() {
+        let a = document.getElementById('so').value;
+        let tbp = a * a;
+        document.getElementById('result').innerText = tbp;
+    }
+</script>
+</body>
+</html>
+
+
+
+
